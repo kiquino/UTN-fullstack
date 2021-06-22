@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja amarillo" onclick="cambiar('#E8AD05')"></div>
+        <div class="caja azul" onclick="cambiar('#3902DB')"></div>
+        <div class="caja rojo" onclick="cambiar('#F2170A')"></div>
+    </div>
+    <div class="contenedor">
+        <textarea name="textarea" id="textArea" placeholder="Ingrese un texto para contar" cols="30" rows="10" onkeyup="contar()"></textarea>
+        <div class="resultado"></div>
+    </div>
+    <script src="tarea.js"></script>
+</body>
+</html>
