@@ -14,6 +14,70 @@ function contar() {
     
 }
 
+function alumnosAprobados() {
+    
+    let filtrar = alumnos.filter((e)=> e.nota >= 7);
+   filtrar.forEach(elem => {
+       let newEl = document.createElement('p');
+       newEl.innerHTML = `nombre ${elem.nombre} - nota ${elem.nota}`;
+       document.getElementById('alumnos').appendChild(newEl);
+   });
+  
+}
+
+var alumnos = [
+
+  {
+
+    nombre: 'Juan Gomez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Pedro Rodriguez',
+
+    nota: 4
+
+  }, {
+
+    nombre: 'Roxana García',
+
+    nota: 8
+
+  }, {
+
+    nombre: 'Luciano Lopez',
+
+    nota: 5
+
+  }, {
+
+    nombre: 'Fernanda Gimenez',
+
+    nota: 6
+
+  }, {
+
+    nombre: 'Florencia Martinez',
+
+    nota: 10
+
+  }, {
+
+    nombre: 'Raul Sanchez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Sandra Figueroa',
+
+    nota: 8
+
+  }
+
+];
 
 
 // Ejercicio 1:
