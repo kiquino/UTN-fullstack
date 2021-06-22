@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+  <script>
+    // condicion ? <expresion_verdadero> : <expresion_falso>
+
+  var edad = 39;    
+
+  var esMayor = edad >= 21 ? true : false;
+  var cuota = esMayor ? 500 : 350;
+
+    // es lo mismo que
+
+    var esMayor, cuota;
+    if (edad >= 21) {
+      esMayor = true;
+    } else {
+      esMayor = false;
+    }
+
+    if (esMayor) {
+      cuota = 500;
+    } else {
+      cuota = 350;
+    }
+
+    console.log(esMayor);
+    console.log(cuota);
+  
+
+  </script>
+
+</body>
+</html>
