@@ -1,8 +1,12 @@
-import React from 'react';
+import '../../styles/components/layout/Footer.css';
 
 const Footer = (props) => {
 
 
-    return(<div><p>Hola Pete</p></div>);
+    return(<footer>
+        <div className = "contenedor">
+            <p>Todos los derechos reservados - 2021</p>
+        </div>
+    </footer>);
 }
 export default Footer;

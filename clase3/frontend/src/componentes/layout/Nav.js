@@ -1,7 +1,17 @@
-import React from 'react';
+import {Link} from 'react-router-dom';
+import '../../styles/components/layout/Nav.css';
 
-const Nav = (propos) =>{
+const Nav = (props) =>{
 
-    return(<div>Nav</div>);
+    return(<nav>
+        <div className="contenedor">
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/nosotros">Nosotros</Link></li>
+                <li><Link to="/novedades">Novedades</Link></li>
+                <li><Link to="/contacto">Contacto</Link></li>
+            </ul>
+        </div>
+    </nav>);
 }
 export default Nav;
