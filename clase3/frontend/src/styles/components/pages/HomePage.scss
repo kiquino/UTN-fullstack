@@ -1,0 +1,72 @@
+main {
+    height: auto;
+    padding: 1rem 0;
+    width: 100%;
+
+    .texto {
+
+        width: 30%;
+        margin: 2rem auto;
+        height: auto;
+
+        .title {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+
+        .text {
+            width: 40%;
+        }
+    }
+
+    .banner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.contenedor-textoimagen {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 5rem auto;
+
+    .texto {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: space-between;
+        margin-right: 2rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 200;
+            margin: 0;
+        }
+    }
+
+    .contenedor-imagen {
+        width: 60%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}

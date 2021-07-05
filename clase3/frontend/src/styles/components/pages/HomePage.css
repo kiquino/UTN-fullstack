@@ -1,0 +1,96 @@
+main {
+  height: auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+main .texto {
+  width: 30%;
+  margin: 2rem auto;
+  height: auto;
+}
+
+main .texto .title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+main .columns .text {
+  width: 40%;
+}
+
+main .banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .banner img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contenedor-textoimagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.contenedor-textoimagen .texto {
+  width: 30%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.contenedor-textoimagen .texto h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.contenedor-textoimagen .contenedor-imagen {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=HomePage.css.map */

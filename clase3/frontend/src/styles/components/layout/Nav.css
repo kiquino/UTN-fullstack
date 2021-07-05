@@ -1,6 +1,6 @@
 nav .contenedor ul li {
     list-style: none;
-
+    margin: 0 1rem;
 }
 
 nav .contenedor ul li a {
@@ -8,6 +8,7 @@ nav .contenedor ul li a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
+
 }
 
 nav .contenedor ul li:hover a {
