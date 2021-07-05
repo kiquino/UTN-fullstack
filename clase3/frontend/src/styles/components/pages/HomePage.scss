@@ -20,6 +20,7 @@ main {
         flex-direction: row;
         width: 90%;
         margin: 0 auto;
+        justify-content: center;
 
         .text {
             width: 40%;
@@ -68,5 +69,13 @@ main {
         display: flex;
         margin: 0 auto;
         justify-content: center;
+
+        img {
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: 60% 0;
+        }
     }
 }

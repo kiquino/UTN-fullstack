@@ -1,0 +1,53 @@
+.columnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+
+    .persona-data {
+
+        margin: 1rem 0.5rem;
+
+        flex-wrap: nowrap;
+
+
+    }
+
+    .contact-data {
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+
+}

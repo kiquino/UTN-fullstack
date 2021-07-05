@@ -25,6 +25,9 @@ main .columns {
           flex-direction: row;
   width: 90%;
   margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .columns .text {
@@ -92,5 +95,15 @@ main .banner img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contenedor-textoimagen .contenedor-imagen img {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 60% 0;
+     object-position: 60% 0;
 }
 /*# sourceMappingURL=HomePage.css.map */

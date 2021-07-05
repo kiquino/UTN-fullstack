@@ -1,0 +1,35 @@
+section {
+    h2 {
+        text-align: center;
+    }
+}
+
+.articulos {
+    display: flex;
+
+    flex-direction: row;
+
+    .articulo {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 30%;
+
+        h3 {
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h4 {
+            font-weight: 400;
+            margin-bottom: 1rem;
+
+        }
+
+        .cuerpo {
+            width: 80%;
+            text-align: left;
+        }
+
+    }
+}
