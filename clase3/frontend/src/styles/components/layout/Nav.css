@@ -11,6 +11,10 @@ nav .contenedor ul li a {
 
 }
 
+nav .contenedor ul li a.active {
+    text-decoration: underline;
+}
+
 nav .contenedor ul li:hover a {
     text-decoration: underline;
 }

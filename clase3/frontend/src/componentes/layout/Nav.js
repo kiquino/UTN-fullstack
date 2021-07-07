@@ -1,15 +1,15 @@
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import '../../styles/components/layout/Nav.css';
-
+import {NavLink} from 'react-router-dom';
 const Nav = (props) =>{
 
     return(<nav>
         <div className="contenedor">
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/nosotros">Nosotros</Link></li>
-                <li><Link to="/novedades">Novedades</Link></li>
-                <li><Link to="/contacto">Contacto</Link></li>
+                <li><NavLink activeClasssName="activo" exact to="/">Home</NavLink></li>
+                <li><NavLink activeClasssName="activo" exact to="/nosotros">Nosotros</NavLink></li>
+                <li><NavLink activeClasssName="activo" exact to="/novedades">Novedades</NavLink></li>
+                <li><NavLink activeClasssName="activo" exact to="/contacto">Contacto</NavLink></li>
             </ul>
         </div>
     </nav>);
