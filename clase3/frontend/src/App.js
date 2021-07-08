@@ -1,31 +1,55 @@
-
 import React from 'react';
 import Nav from './componentes/layout/Nav';
 import Footer from './componentes/layout/Footer';
 import Header from './componentes/layout/Header';
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import Contacto from './pages/Contacto';
 import HomePage from './pages/HomePage';
 import Nosotros from './pages/Nosotros';
 import Novedades from './pages/Novedades';
- 
+
 
 
 function App() {
-  return (
-    <div >
-      <Router><Header/>
-     <Nav/>
-     <Switch>
-       <Route path="/"exact component={HomePage}/>
-       <Route path="/nosotros" exact component={Nosotros}/>
-       <Route path="/novedades" exact component={Novedades}/>
-       <Route path="/contacto" exact component={Contacto}/>
-     </Switch>
-     <Footer/></Router>
-     
+  return ( <
+    div >
+    <
+    Router > < Header / >
+    <
+    Nav / >
+    <
+    Switch >
+    <
+    Route path = "/"
+    exact component = {
+      HomePage
+    }
+    /> <
+    Route path = "/nosotros"
+    exact component = {
+      Nosotros
+    }
+    /> <
+    Route path = "/novedades"
+    exact component = {
+      Novedades
+    }
+    /> <
+    Route path = "/contacto"
+    exact component = {
+      Contacto
+    }
+    /> <
+    /Switch> <
+    Footer / > < /Router>
 
-    </div>
+
+    <
+    /div>
   );
 }
 
