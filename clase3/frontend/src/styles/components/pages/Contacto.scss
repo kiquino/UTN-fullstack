@@ -14,10 +14,46 @@
 
 }
 
+.color-2 {
+    background-color: rgb(175, 166, 255);
+}
+
 .fila {
     display: flex;
     flex-direction: row;
 }
+
+.separado {
+    justify-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.input-style {
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.w-30 {
+    width: 30%;
+}
+
 
 .formulario {
     display: flex;
@@ -46,7 +82,7 @@
 .centrado {
     display: flex;
     justify-content: center;
-    margin: 1rem auto;
+    margin: 0 auto;
     width: 100%;
     height: auto;
 
