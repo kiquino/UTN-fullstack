@@ -15,41 +15,28 @@ import Novedades from './pages/Novedades';
 
 
 function App() {
-  return ( <
-    div >
-    <
-    Router > < Header / >
-    <
-    Nav / >
-    <
-    Switch >
-    <
-    Route path = "/"
+  return ( <div >
+    <Router > <Header/>
+    <Nav/>
+    <Switch>
+    <Route path = "/"
     exact component = {
       HomePage
-    }
-    /> <
-    Route path = "/nosotros"
+    }/> <Route path = "/nosotros"
     exact component = {
       Nosotros
-    }
-    /> <
-    Route path = "/novedades"
+    }/> < Route path = "/novedades"
     exact component = {
       Novedades
     }
-    /> <
-    Route path = "/contacto"
+    /> <    Route path = "/contacto"
     exact component = {
       Contacto
     }
-    /> <
-    /Switch> <
-    Footer / > < /Router>
+    /> </Switch> < Footer /> </Router>
 
 
-    <
-    /div>
+    </div>
   );
 }
 
