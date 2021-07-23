@@ -20,15 +20,19 @@
     <ul class="right flex flex-end">
 
       <p>Hola, {{name}}</p>
-      {{#unless logged}}<li><a href="/sesion">Login</a>
-        <a href="/sesion">Registro</a>
-      </li>
-      {{/unless}}
       {{#if logged}}
       <li>
         <a href="/salir">salir</a>
       </li>
+
+      {{else}}
+      <li><a href="/sesion">Login</a>
+        <a href="/sesion">Registro</a>
+      </li>
       {{/if}}
+
+
+
     </ul>
   </div>
   <main class="columna centrado margin-tb-5"> {{{body}}}</main>
