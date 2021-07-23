@@ -52,7 +52,7 @@ app.post('/ingresa', function (req, res) {
   res.redirect('/');
 });
 app.get('/salir', function (req, res) {
-  req.session.destroy;
+  req.session.destroy();
   res.redirect('/');
 });
 
