@@ -1,0 +1,20 @@
+<section>
+    <h2 class="subtitle">Espacio Personal</h2>
+
+    {{#if logged}}<p>Usted se ha logueado</p>
+    <p><b>{{name}}</b>: - Dni: key - domicilio: unico - email(enviar cambios)</p>{{/if}}
+    <br>
+    <hr>
+    <p>Acá Irian Los datos de uno mismo y sus gastos personales</p>
+    <p>lleva y trae datos de la bbdd</p>
+
+    {{#unless logged}}
+    <br>
+    <hr>
+    <p>Ingrese con su nombre
+    <form action="/ingresa" method="post">
+        <label for="">nombre</label><input type="text" name="nombre">
+    </form>
+    </p>
+    {{/unless}}
+</section>

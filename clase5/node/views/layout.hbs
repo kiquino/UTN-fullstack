@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <header>
+    <ul class="centrado">
+      <li><a href="/">Home</a></li>
+      <li><a href="/servicios">Servicios</a></li>
+      <li><a href="/gastos">Gastos</a></li>
+      <li><a href="/personal">personal</a></li>
+
+    </ul>
+  </header>
+  <div class="login-bar horizontal w-100">
+    <ul class="right flex flex-end">
+
+      <p>Hola, {{name}}</p>
+      {{#unless logged}}<li><a href="/sesion">Login</a>
+        <a href="/sesion">Registro</a>
+      </li>
+      {{/unless}}
+      {{#if logged}}
+      <li>
+        <a href="/salir">salir</a>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+  <main class="columna centrado margin-tb-5"> {{{body}}}</main>
+
+</body>
+
+</html>
