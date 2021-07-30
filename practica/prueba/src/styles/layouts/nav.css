@@ -1,0 +1,26 @@
+.nav-style {
+  background-color: red;
+}
+
+.nav-style nav {
+  margin: 1rem 2rem;
+  font-weight: bold;
+}
+
+.nav-style nav .text-large {
+  font-size: x-large;
+}
+
+.nav-style nav ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.nav-style nav ul li a {
+  text-decoration: none;
+}
+
+.nav-style nav ul li:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=nav.css.map */

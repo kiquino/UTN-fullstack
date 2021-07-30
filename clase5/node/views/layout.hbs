@@ -19,7 +19,7 @@
   <div class="login-bar horizontal w-100">
     <ul class="right flex flex-end">
 
-      <p>Hola, {{name}}</p>
+      <p>Hola, {{#if logged}} <b> {{name}}</b> {{else}} <b>Desconocido</b>{{/if}}</p>
       {{#if logged}}
       <li>
         <a href="/salir">salir</a>

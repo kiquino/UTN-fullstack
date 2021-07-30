@@ -1,0 +1,27 @@
+.nav-style {
+    background-color: red;
+
+    nav {
+        margin: 1rem 2rem;
+        font-weight: bold;
+
+        .text-large {
+            font-size: x-large;
+        }
+
+        ul {
+            li {
+                list-style-type: none;
+                margin: 0 1rem;
+
+                a {
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

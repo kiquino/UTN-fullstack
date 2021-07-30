@@ -2,7 +2,7 @@
     <h2 class="subtitle">Espacio Personal</h2>
 
     {{#if logged}}<p>Usted se ha logueado</p>
-    <p><b>{{name}}</b>: - Dni: key - domicilio: unico - email(enviar cambios)</p>{{/if}}
+    <p><b>{{name}}</b>: - Dni: key <br> - domicilio: unico <br> - email(enviar cambios) <br></p>{{/if}}
     <br>
     <hr>
     <p>Acá Irian Los datos de uno mismo y sus gastos personales</p>
@@ -10,6 +10,7 @@
 
     {{#unless logged}}
     <br>
+    <b>Ingrese para poder ver su información personal</b>
     <hr>
     <p>Ingrese con su nombre
     <form action="/ingresa" method="post">
