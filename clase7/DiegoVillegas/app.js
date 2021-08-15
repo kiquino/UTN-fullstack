@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
@@ -11,8 +13,9 @@ var serviciosRouter = require('./routes/servicios');
 var gastosRouter = require('./routes/gastos');
 var personalRouter = require('./routes/personal');
 var BuilderRouter = require('./routes/admin/builder');
+const session = require('express-session');
 
-require('dotenv').config();
+
 
 var app = express();
 
@@ -27,6 +30,13 @@ app.use(express.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'pablitoclavounclavito',
+  resave: false,
+  saveUninitialized: true
+}));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
