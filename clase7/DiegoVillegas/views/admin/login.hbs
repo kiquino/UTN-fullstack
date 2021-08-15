@@ -1,0 +1,16 @@
+<form method="POST" action="/admin/login">
+    <div class="mb-3">
+        <label for="dni" class="form-label">Número de Documento</label>
+        <input type="text" name="dni" class="form-control" id="dni" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ej: 12556678</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="password">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+{{#if error}}
+<p>Error de datos de ingreso.</p>
+{{/if}}
