@@ -24,12 +24,12 @@
       <p>Hola, {{#if logged}} <b> {{nombre}}</b> {{else}} <b>Desconocido</b>{{/if}}</p>
       {{#if logged}}
       <li>
-        <a href="/logout">salir</a>
+        <a href="admin/login/logout">salir</a>
       </li>
 
       {{else}}
       <li><a href="admin/login">Login</a>
-        <a href="/sesion">Registro</a>
+        <a href="/admin/registro">Registro</a>
       </li>
       {{/if}}
 

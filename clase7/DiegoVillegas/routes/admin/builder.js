@@ -1,11 +1,16 @@
 var express = require('express');
-var router = express.Router();
+var app = express();
 
-router.get('/', function (req, res, next) {
+/* GET users listing. */
+app.get('/', function (req, res, next) {
+    var logged = Boolean(req.session.nombre);
     res.render('admin/builder', {
         layout: 'admin/layout',
+        title: 'builder',
         nombre: req.session.nombre,
-        apellido: req.session.apellido
-    })
-})
-module.exports = router;
+        apellido: req.session.apellido,
+        logged: logged
+    });
+});
+
+module.exports = app;

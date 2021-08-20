@@ -13,6 +13,9 @@ var serviciosRouter = require('./routes/servicios');
 var gastosRouter = require('./routes/gastos');
 var personalRouter = require('./routes/personal');
 var BuilderRouter = require('./routes/admin/builder');
+var registerRouter = require('./routes/admin/registro');
+var registrohogarRouter = require('./routes/admin/newdir');
+
 const session = require('express-session');
 
 
@@ -41,10 +44,12 @@ app.use(session({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/registro', registerRouter);
 app.use('/personal', personalRouter);
 app.use('/servicios', serviciosRouter);
 app.use('/gastos', gastosRouter);
-app.use('admin/builder', BuilderRouter);
+app.use('/admin/builder', BuilderRouter);
+app.use('/admin/newdir', registrohogarRouter);
 
 secured = async (req, res, next) => {
   try {

@@ -11,14 +11,44 @@
 
 <body>
     <header>
-        <div class="banner centrado" style="width: 100%; height:15rem; background-color:aqua"></div>
+        <ul class="centrado">
+            <li><a href="/">Home</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/gastos">Gastos</a></li>
+            <li><a href="/personal">personal</a></li>
+
+        </ul>
     </header>
+    {{#if logged}}
+    <div class="login-bar horizontal w-100">
+        <ul class="right flex flex-end">
+
+            <p>Hola, <b> {{nombre}}, {{apellido}}</b> </p>
+
+            <li>
+                <a href="./login/logout">salir</a>
+            </li>
+
+
+
+
+
+
+        </ul>
+    </div>
+    {{/if}}
     <div class="login-bar horizontal w-100">
 
     </div>
     <main class="columna centrado margin-tb-5"> {{{body}}}</main>
-    <div class="login-button"> <a class="centrado" href="/"
-            style="padding: 1em; border-radius:10px; border:1px solid blue;">Volver</a></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 offset-4"><a class="" href="/"><button type="button"
+                        class="btn btn-primary">Volver</button></a></div>
+        </div>
+    </div>
+
 
 
 </body>
