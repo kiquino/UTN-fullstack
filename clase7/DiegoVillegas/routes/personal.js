@@ -7,6 +7,11 @@ app.get('/', function (req, res, next) {
     res.render('personal', {
         title: 'Personal',
         nombre: req.session.nombre,
+        apellido: req.session.apellido,
+        documento: req.session.documento,
+        email: req.session.email,
+        domicilio: req.session.id_domicilio,
+
         logged: logged
     });
 });

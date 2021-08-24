@@ -15,6 +15,8 @@ var personalRouter = require('./routes/personal');
 var BuilderRouter = require('./routes/admin/builder');
 var registerRouter = require('./routes/admin/registro');
 var registrohogarRouter = require('./routes/admin/newdir');
+var perfilRouter = require('./routes/admin/perfil');
+var compraRouter = require('./routes/admin/compra');
 
 const session = require('express-session');
 
@@ -40,6 +42,21 @@ app.use(session({
   saveUninitialized: true
 }));
 
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.documento);
+    if (req.session.documento) {
+      next();
+    } else {
+      res.render('admin/login', {
+        layout: 'admin/layout',
+        notloged: true
+      })
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -48,21 +65,12 @@ app.use('/admin/registro', registerRouter);
 app.use('/personal', personalRouter);
 app.use('/servicios', serviciosRouter);
 app.use('/gastos', gastosRouter);
-app.use('/admin/builder', BuilderRouter);
+app.use('/admin/builder', secured, BuilderRouter);
 app.use('/admin/newdir', registrohogarRouter);
+app.use('/admin/perfil', secured, perfilRouter);
+app.use('/admin/compra', secured, compraRouter);
 
-secured = async (req, res, next) => {
-  try {
-    console.log(req.session.dni);
-    if (req.session.dni) {
-      next();
-    } else {
-      res.redirect('/admin/login');
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

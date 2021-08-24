@@ -1,16 +1,17 @@
 var express = require('express');
 var app = express();
 
-/* GET users listing. */
+
 app.get('/', function (req, res, next) {
     var logged = Boolean(req.session.nombre);
     var admin = false;
     if (req.session.admin == 1) {
         admin = true;
     }
-    res.render('admin/builder', {
+
+    res.render('admin/compra', {
         layout: 'admin/layout',
-        title: 'Bienvenido',
+        title: 'Perfil',
         nombre: req.session.nombre,
         apellido: req.session.apellido,
         documento: req.session.documento,

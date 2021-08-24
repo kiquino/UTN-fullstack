@@ -12,7 +12,11 @@
     <button type="submit" class="btn btn-primary">Ingresar</button>
 </form>
 <div style="width: 100%; display:flex; justify-content:center; align-items:center;"><a href="/admin/registro"
-        class="centrado"><button type="button" class="btn btn-info">Registro</button></a></div>
+        class="centrado"><button type="button" class="btn btn-primary"><i
+                class="fas fa-user-plus me-2"></i>Registro</button></a></div>
 {{#if error}}
-<p>Error de datos de ingreso.</p>
+<p class="alert alert-danger py-3">Error de datos de ingreso o Inexistente</p>
+{{/if}}
+{{#if notloged}}
+<p class="alert alert-danger py-3">Para ENTRAR por favor ingrese sus datos primero</p>
 {{/if}}

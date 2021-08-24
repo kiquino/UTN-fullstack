@@ -10,6 +10,26 @@ async function getDniAndPass(dni, pass) {
         console.log(err);
     }
 }
+async function getDomicilio(id_domicilio) {
+    try {
+        var query = "select * from hogar where id = ?";
+        var rows = await pool.query(query, [id_domicilio]);
+        return rows[0];
+    } catch (err) {
+        console.log(err);
+    }
+}
+async function getIntegrantes(id_domicilio) {
+    try {
+        var query = "select nombre,apellido from inquilino where id_domicilio = ?";
+        var rows = await pool.query(query, [id_domicilio]);
+        return rows;
+    } catch (error) {
+        console.log(err)
+    }
+}
 module.exports = {
-    getDniAndPass
+    getDniAndPass,
+    getDomicilio,
+    getIntegrantes
 };

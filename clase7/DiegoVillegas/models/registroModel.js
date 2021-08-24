@@ -35,7 +35,7 @@ async function newInquilino(nombre, apellido, email, dni, password, calle, altur
             var query3 = "update hogar set id_admin = ? where id = ?";
             var add_admin = await pool.query(query3, [new_id_admin, id_domicilio.id]);
             add_admin;
-            console.log("se agrego")
+            console.log("se agrego");
         }
 
         return true;
